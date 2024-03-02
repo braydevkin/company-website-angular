@@ -8,4 +8,4 @@ import { HomeTemplate } from '../../templates/home/home.component';
   imports: [HomeTemplate],
   templateUrl: './home.component.html',
 })
-export class AppComponent {}
+export class AppHome {}
