@@ -1,3 +1,9 @@
 <header class="w-screen h-[60px] bg-gray-400 shadow-lg">
   <app-red-button [title]="redButtonTitle" />
+
+  <ul class="w-full flex items-center space-x-4 font-inter">
+    <li *ngFor="let item of items" class="hover:scale-105 transition-all delay-100">
+      <app-menu-item [title]="item.title" [to]="item.to" />
+    </li>
+  </ul>
 </header>
