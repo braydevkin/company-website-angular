@@ -1,26 +1,26 @@
 import { TestBed } from '@angular/core/testing';
-import { AppComponent } from './home.component';
+import { AppHome } from './home.component';
 
-describe('AppComponent', () => {
+describe('AppHome', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent],
+      imports: [AppHome],
     }).compileComponents();
   });
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
+    const fixture = TestBed.createComponent(AppHome);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
 
   it(`should have the 'company-website' title`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
+    const fixture = TestBed.createComponent(AppHome);
     const app = fixture.componentInstance;
   });
 
   it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
+    const fixture = TestBed.createComponent(AppHome);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
