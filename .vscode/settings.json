@@ -1,0 +1,45 @@
+{
+  "editor.formatOnSave": true,
+  "prettier.endOfLine": "lf",
+  "files.eol": "\n",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true
+  },
+  "workbench.colorCustomizations": {
+    // "activityBar.activeBackground": "#d96506",
+    "activityBar.activeBorder": "#1d1d1b",
+    "activityBar.background": "#1d1d1b",
+    "activityBar.foreground": "#ffffff",
+    "activityBar.inactiveForeground": "#ffffff",
+    "activityBarBadge.background": "#ffffff",
+    "activityBarBadge.foreground": "#1d1d1b",
+    // "button.background": "#3c649f",
+    // "button.hoverBackground": "#3c649fcc",
+    // "badge.background": "#3c649f",
+    // "focusBorder": "#d96506",
+    // "list.activeSelectionBackground": "#3c649f",
+    // "list.focusBackground": "#3c649f99",
+    // "menu.selectionBackground": "#3c649f",
+    // "progressBar.background": "#d96506",
+    // "sash.hoverBorder": "#d96506",
+    "selection.background": "#3c649f",
+    "statusBar.background": "#660099",
+    "statusBar.debuggingBackground": "#660099",
+    "statusBar.foreground": "#ffffff",
+    "statusBarItem.hoverBackground": "#1d1d1b",
+    "statusBarItem.remoteBackground": "#ffffff",
+    "statusBarItem.remoteForeground": "#1d1d1b"
+    // "textLink.foreground": "#d96506",
+    // "titleBar.activeBackground": "#660099",
+    // "titleBar.activeForeground": "#ffffff"
+    // "titleBar.inactiveBackground": "#3c649f99",
+    // "titleBar.inactiveForeground": "#ffffff99"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
