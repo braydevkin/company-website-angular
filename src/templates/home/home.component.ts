@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { HeaderComponent } from '../../design/molecules/header/header.component';
 
 @Component({
-  selector: 'home-header',
+  selector: 'home-template',
   standalone: true,
-  imports: [],
+  imports: [HeaderComponent],
   templateUrl: './home.component.html',
 })
-export class HomeComponent implements OnInit {
+export class HomeTemplate implements OnInit {
   constructor() {}
   ngOnInit(): void {}
 }
