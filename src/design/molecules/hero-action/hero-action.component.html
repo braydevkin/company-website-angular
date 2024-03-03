@@ -1,10 +1,21 @@
-<section class="w-screen h-auto flex items-center px-12 pt-16">
-  <div class="w-full flex flex-col items-start space-y-3 lg:w-1/2">
-    <app-title [title]="actionTitle" [activateTypingAnimation]="true" />
+<section class="w-screen h-auto flex items-center p-4 md:px-24 md:pt-16">
+  <div
+    class="w-full flex flex-col items-start text-center md:text-justify space-y-4 md:w-1/2 px-8"
+  >
+    <app-title [title]="actionTitle" [activateTypingAnimation]="false" />
     <app-subtitle [subtitle]="actionSubtitle" />
-    <app-rounded-button [title]="actionButtonTitle" />
+    <div class="w-full text-center md:text-start">
+      <app-rounded-button [title]="actionButtonTitle" />
+    </div>
+
+    <div
+      class="w-full flex flex-col text-center space-y-3 xl:space-y-0 xl:flex-row items-center space-x-2 pt-6"
+    >
+      <p class="text-[0.9em]">{{ callToReadMore }}</p>
+      <app-read-more />
+    </div>
   </div>
-  <div class="w-1/2 h-[480px] xl:[620px] relative">
+  <div class="hidden md:block md:w-1/2 md:h-[480px] relative">
     <img
       ngSrc="{{ brandHeroUrl }}"
       priority
