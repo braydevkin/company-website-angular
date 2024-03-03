@@ -1,0 +1,27 @@
+<section class="w-screen h-auto flex items-center p-4 md:px-24 md:pt-16">
+  <div
+    class="w-full flex flex-col items-start text-center md:text-justify space-y-4 md:w-1/2 px-8"
+  >
+    <app-title [title]="actionTitle" [activateTypingAnimation]="false" />
+    <app-subtitle [subtitle]="actionSubtitle" />
+    <div class="w-full text-center md:text-start">
+      <app-rounded-button [title]="actionButtonTitle" />
+    </div>
+
+    <div
+      class="w-full flex flex-col text-center space-y-3 xl:space-y-0 xl:flex-row items-center space-x-2 pt-6"
+    >
+      <p class="text-[0.9em]">{{ callToReadMore }}</p>
+      <app-read-more />
+    </div>
+  </div>
+  <div class="hidden md:block md:w-1/2 md:h-[480px] relative">
+    <img
+      ngSrc="{{ brandHeroUrl }}"
+      priority
+      alt="Redilify hero illustration"
+      fill
+      class="object-none"
+    />
+  </div>
+</section>

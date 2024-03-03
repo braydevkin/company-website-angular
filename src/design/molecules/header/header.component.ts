@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { RedButtonComponent } from '../../atoms/red-button/red-button.component';
 import { MenuItemComponent } from '../../atoms/menu-item/menu-item.component';
 import { CommonModule } from '@angular/common';
 import { ColapseButtonComponent } from '../../atoms/colapse-button/colapse-button.component';
@@ -25,10 +24,9 @@ export class HeaderComponent {
   @Input() isOpen: boolean = false;
   @Input() title: string = 'Company Website';
   @Input() items: HeaderItem[] = [
-    { title: 'Início', to: '/' },
-    { title: 'Nossos Parceiros', to: '/partners' },
-    { title: 'Via Certa Ensina', to: '/learn' },
-    { title: 'Contato', to: '/contact' },
+    { title: 'Home', to: '/' },
+    { title: 'Plans', to: '/plans' },
+    { title: 'FAQ', to: '/faq' },
   ];
 
   colapse() {

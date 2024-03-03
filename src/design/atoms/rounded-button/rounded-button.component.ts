@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-red-button',
+  selector: 'app-rounded-button',
   standalone: true,
   imports: [],
-  templateUrl: './red-button.component.html',
+  templateUrl: './rounded-button.component.html',
 })
-export class RedButtonComponent {
+export class RoundedButtonComponent {
   @Input() title: string = '';
 }

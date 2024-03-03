@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RedButtonComponent } from './red-button.component';
+import { ReadMoreComponent } from './read-more.component';
 
-describe('RedButtonComponent', () => {
-  let component: RedButtonComponent;
-  let fixture: ComponentFixture<RedButtonComponent>;
+describe('ReadMoreComponent', () => {
+  let component: ReadMoreComponent;
+  let fixture: ComponentFixture<ReadMoreComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RedButtonComponent]
+      imports: [ReadMoreComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(RedButtonComponent);
+    fixture = TestBed.createComponent(ReadMoreComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

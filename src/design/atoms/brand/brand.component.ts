@@ -1,11 +1,12 @@
+import { NgOptimizedImage } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-brand',
   standalone: true,
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './brand.component.html',
 })
 export class BrandComponent {
-  @Input() title: string = '';
+  @Input() brandLogoUrl: string = '../../../assets/brand/logo.png';
 }
