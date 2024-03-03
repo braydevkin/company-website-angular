@@ -1,1 +1,9 @@
-<h1>{{ title }}</h1>
+<h1
+  [ngClass]="{
+    'relative w-[max-content] font-mono before:absolute before:inset-0 before:bg-white before:animate-typewriter':
+      activateTypingAnimation
+  }"
+  class="text-[2em] font-bold font-inter"
+>
+  {{ title }}
+</h1>
