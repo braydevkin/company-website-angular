@@ -3,6 +3,7 @@ import { RedButtonComponent } from '../../atoms/red-button/red-button.component'
 import { MenuItemComponent } from '../../atoms/menu-item/menu-item.component';
 import { CommonModule } from '@angular/common';
 import { ColapseButtonComponent } from '../../atoms/colapse-button/colapse-button.component';
+import { BrandComponent } from '../../atoms/brand/brand.component';
 
 type HeaderItem = {
   title: string;
@@ -12,7 +13,12 @@ type HeaderItem = {
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, ColapseButtonComponent, MenuItemComponent],
+  imports: [
+    CommonModule,
+    ColapseButtonComponent,
+    BrandComponent,
+    MenuItemComponent,
+  ],
   templateUrl: './header.component.html',
 })
 export class HeaderComponent {
