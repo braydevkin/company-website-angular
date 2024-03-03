@@ -41,5 +41,52 @@
     // "titleBar.inactiveBackground": "#3c649f99",
     // "titleBar.inactiveForeground": "#ffffff99"
   },
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "restoreTerminals.terminals": [
+    {
+      "splitTerminals": [
+        {
+          "name": "Application Running",
+          "commands": ["cd .", "yarn start"],
+          "icon": "server"
+        }
+      ]
+    },
+    {
+      "splitTerminals": [
+        {
+          "name": "Create Atom",
+          "icon": "light-bulb",
+          "commands": ["cd ./src/design/atoms"]
+        }
+      ]
+    },
+    {
+      "splitTerminals": [
+        {
+          "name": "Create Molecules",
+          "icon": "light-bulb",
+          "commands": ["cd ./src/design/molecules"]
+        }
+      ]
+    },
+    {
+      "splitTerminals": [
+        {
+          "name": "Create Organism",
+          "icon": "light-bulb",
+          "commands": ["cd ./src/design/organisms"]
+        }
+      ]
+    },
+    {
+      "splitTerminals": [
+        {
+          "name": "Github Commands",
+          "icon": "light-bulb",
+          "commands": ["cd .", "git status"]
+        }
+      ]
+    }
+  ]
 }
