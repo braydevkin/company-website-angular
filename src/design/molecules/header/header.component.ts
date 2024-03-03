@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { RedButtonComponent } from '../../atoms/red-button/red-button.component';
 import { MenuItemComponent } from '../../atoms/menu-item/menu-item.component';
 import { CommonModule } from '@angular/common';
+import { ColapseButtonComponent } from '../../atoms/colapse-button/colapse-button.component';
 
 type HeaderItem = {
   title: string;
@@ -11,16 +12,20 @@ type HeaderItem = {
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, RedButtonComponent, MenuItemComponent],
+  imports: [CommonModule, ColapseButtonComponent, MenuItemComponent],
   templateUrl: './header.component.html',
 })
 export class HeaderComponent {
-  @Input() title: string = 'Header Title';
-  @Input() redButtonTitle: string = 'Falar com a Via Certa';
+  @Input() isOpen: boolean = false;
+  @Input() title: string = 'Company Website';
   @Input() items: HeaderItem[] = [
     { title: 'Início', to: '/' },
     { title: 'Nossos Parceiros', to: '/partners' },
     { title: 'Via Certa Ensina', to: '/learn' },
     { title: 'Contato', to: '/contact' },
   ];
+
+  colapse() {
+    this.isOpen = !this.isOpen;
+  }
 }
