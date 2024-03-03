@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-red-button',
+  selector: 'app-title',
   standalone: true,
   imports: [],
-  templateUrl: './red-button.component.html',
+  templateUrl: './title.component.html',
 })
-export class RedButtonComponent {
+export class TitleComponent {
   @Input() title: string = '';
 }
