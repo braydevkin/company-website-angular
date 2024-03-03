@@ -1,5 +1,16 @@
-<div class="w-full flex flex-col items-start space-y-3">
-  <app-title [title]="actionTitle" [activateTypingAnimation]="true" />
-  <app-subtitle [subtitle]="actionSubtitle" />
-  <app-rounded-button [title]="actionButtonTitle" />
-</div>
+<section class="w-screen h-auto flex items-center px-12 pt-16">
+  <div class="w-full flex flex-col items-start space-y-3 lg:w-1/2">
+    <app-title [title]="actionTitle" [activateTypingAnimation]="true" />
+    <app-subtitle [subtitle]="actionSubtitle" />
+    <app-rounded-button [title]="actionButtonTitle" />
+  </div>
+  <div class="w-1/2 h-[480px] xl:[620px] relative">
+    <img
+      ngSrc="{{ brandHeroUrl }}"
+      priority
+      alt="Redilify hero illustration"
+      fill
+      class="object-none"
+    />
+  </div>
+</section>

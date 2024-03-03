@@ -24,10 +24,9 @@ export class HeaderComponent {
   @Input() isOpen: boolean = false;
   @Input() title: string = 'Company Website';
   @Input() items: HeaderItem[] = [
-    { title: 'Início', to: '/' },
-    { title: 'Nossos Parceiros', to: '/partners' },
-    { title: 'Via Certa Ensina', to: '/learn' },
-    { title: 'Contato', to: '/contact' },
+    { title: 'Home', to: '/' },
+    { title: 'Plans', to: '/plans' },
+    { title: 'FAQ', to: '/faq' },
   ];
 
   colapse() {
