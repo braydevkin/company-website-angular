@@ -1,0 +1,19 @@
+<section class="w-screen h-auto py-12 bg-gray-50">
+  <div class="flex flex-col items-center justify-center space-y-3">
+    <h1 class="text-[#264673] font-bold text-3xl">Nossos parceiros</h1>
+    <p class="font-inter text-xl text-center">
+      Distribuímos confiança para suas prateleiras
+    </p>
+  </div>
+  <div class="flex items-center justify-center mt-12">
+    <div></div>
+    <ul class="grid grid-cols-1 md:grid-cols-3 gap-12 w-full items-center">
+      <li
+        *ngFor="let partner of partners"
+        class="hover:scale-105 transition-all delay-100"
+      >
+        <app-partner-card [name]="partner.name" [segment]="partner.segment" />
+      </li>
+    </ul>
+  </div>
+</section>
