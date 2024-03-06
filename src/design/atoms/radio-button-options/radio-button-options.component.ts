@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { MatRadioModule } from '@angular/material/radio';
 
 @Component({
   selector: 'app-radio-button-options',
   standalone: true,
-  imports: [],
+  imports: [MatRadioModule, FormsModule],
   templateUrl: './radio-button-options.component.html',
-  styleUrl: './radio-button-options.component.css'
 })
 export class RadioButtonOptionsComponent {
-
+  selectedOption: string = '';
+  @Input() options: string[] = [];
 }

@@ -1,1 +1,11 @@
-<p>radio-button-options works!</p>
+<mat-radio-group
+  aria-labelledby="example-radio-group-label"
+  class="example-radio-group"
+  [(ngModel)]="selectedOption"
+>
+  @for (option of options; track option) {
+  <mat-radio-button class="example-radio-button" [value]="option">{{
+    option
+  }}</mat-radio-button>
+  }
+</mat-radio-group>
